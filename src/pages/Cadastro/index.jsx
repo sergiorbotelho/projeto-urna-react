@@ -140,6 +140,7 @@ function Cadastro() {
     function updateEleitor(doc) {
         setEleitor(doc.nome);
         setEmail(doc.email)
+        setEditEleitor(doc)
     }
     async function handleUpdateCandidato() {
         const docRef = doc(db, "Projeto", projeto, "Candidato", edit?.id);
@@ -170,7 +171,6 @@ function Cadastro() {
                 setEditEleitor({});
                 setEleitor('');
                 setEmail('');
-                
                 toast.success('Eleitor atualizado')
             })
             .catch((error) => {
