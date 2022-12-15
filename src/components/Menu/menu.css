@@ -1,0 +1,28 @@
+.menu-lateral{
+    width: 320px;
+    height: 100vh;
+    background-color: #5A72B8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    position: fixed;
+}
+
+.imgLogo{
+    width: 200px;
+    margin: 50px 0;
+
+}
+
+.linkMenu{
+    color: #F2f2f2;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.logout{
+    cursor: pointer;
+    margin-top: 30px;
+}

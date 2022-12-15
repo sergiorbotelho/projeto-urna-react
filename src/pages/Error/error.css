@@ -1,0 +1,27 @@
+.containerErro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #A3B0D6;
+
+}
+
+.containerErro h1{
+    margin: 10px 0 5px 0;
+    font-size: 34px;
+}
+
+.containerErro p{
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.containerErro img{
+    width: 500px;
+}
+
+a{
+    text-decoration: none;
+}

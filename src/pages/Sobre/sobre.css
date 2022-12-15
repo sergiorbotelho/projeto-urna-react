@@ -1,0 +1,42 @@
+.container-sobre {
+
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #A3B0D6;
+}
+.titulo{
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    color: #185c91;
+}
+.area-card{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   flex-direction: column;
+
+}
+
+.grupo1{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width: 575.98px) {
+    .area-card{
+        flex-direction: row;
+    }
+    .grupo1{
+        flex-direction: column;
+    }
+}

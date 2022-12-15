@@ -1,0 +1,38 @@
+.area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    
+}
+.area-projetoscriados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+
+}
+
+.container-criados{
+    padding: 15px 0 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    
+}
+
+.container-criados div{
+    margin-bottom: 5px;
+}
+.area-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-left: -70px;
+    margin-top: 10px;
+    padding-right: 10px;
+
+}

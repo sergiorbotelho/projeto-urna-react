@@ -1,0 +1,55 @@
+.area-projeto {
+    background-color: #A3B0D6;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.container-cadastro {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    width: 100%;
+    /* background-color: red; */
+    flex-direction: column;
+
+}
+
+.area-total-cadastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 70px;
+    margin-right: 300px;
+
+
+}
+
+.area-cadastro-projeto {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 100vh;
+
+
+
+}
+
+.titulo-projeto {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #003366;
+
+
+
+
+}
