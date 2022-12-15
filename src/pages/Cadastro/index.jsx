@@ -7,7 +7,7 @@ import { ContextApi } from '../../components/Context/contexApi';
 import { db } from '../../firebaseConnection';
 import { doc, addDoc, collection, onSnapshot, deleteDoc, updateDoc, query, orderBy } from 'firebase/firestore'
 import { toast } from 'react-toastify';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 import CardProject from '../../components/CardProject';
 import { FaTrashAlt, FaEdit } from 'react-icons/fa'
 function Cadastro() {
@@ -25,13 +25,17 @@ function Cadastro() {
     const [email, setEmail] = useState('')
     const [eleitores, setEleitores] = useState([])
 
-    useEffect(() => {
+    const [nomeProjeto, setNomeProjeto] = useState([])
 
+
+
+    useEffect(() => {
+        setNomeProjeto(projeto)
         async function loadCandidatos() {
             const docRef = collection(db, "Projeto", projeto, "Candidato")
             const q = query(docRef, orderBy("created", "desc"));
 
-
+            
             const unsub = onSnapshot(q, (snapshot) => {
 
                 let lista = [];
@@ -177,7 +181,14 @@ function Cadastro() {
                 console.log(error);
             })
     }
+
+    if(!nomeProjeto){
+        return <Navigate to='/projeto'/>
+    }
+
     return (
+
+
         <div className='area-projeto'>
             <div className='container-cadastro'>
                 <Menu />
