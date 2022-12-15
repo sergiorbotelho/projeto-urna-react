@@ -3,7 +3,7 @@
     min-height: 100vh;
     height: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     width: 100%;
 }
@@ -12,7 +12,7 @@
     display: flex;
     justify-content: start;
     align-items: start;
-    width: 100%;
+    /* width: 100%; */
     flex-direction: column;
 }
 
@@ -21,15 +21,15 @@
     justify-content: center;
     align-items: center;
     gap: 70px;
-    margin-left: 200px;
+    margin-left: 450px;
 }
 
 .area-cadastro-projeto {
     display: flex;
     flex-direction: column;
-    width: 300px;
     min-height: 100vh;
-    border: 1px solid white;
+    width: 300px;
+
 }
 
 .titulo-projeto {
@@ -37,100 +37,11 @@
     font-weight: bold;
     margin-top: 50px;
     margin-bottom: 20px;
-    margin-left: 70px;
+    margin-left: 200px;
     width: 100%;
     text-align: center;
     color: #003366;
 }
 
-@media (max-width: 574.98px){
-    .area-total-cadastro {
-        margin-left: 180px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        border: 1px solid red;
-    }
-    .area-cadastro-projeto{
-        width: 200px;
-        min-height: 0;
-    }
-    .titulo-projeto{
-        margin-left: 70px;
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 575px) and (max-width: 694.98px) {
-    .area-total-cadastro {
-        margin-left: 240px;
-        flex-wrap: wrap;
-        flex-direction: column;
-        border: 1px solid red;
-    }
-    .area-cadastro-projeto{
-        width: 200px;
-        min-height: 0;
-    }
-    .titulo-projeto{
-        margin-left: 120px;
-        font-size: 16px;
-    }
-}
-
-@media (min-width: 695px) and (max-width: 764.98px) {
-    .area-total-cadastro {
-        margin-left: 220px;
-        flex-wrap: wrap;
-        border: 1px solid red;
-    }
-    .area-cadastro-projeto{
-        width: 200px;
-        min-height: 0;
-    }
-    .titulo-projeto{
-        margin-left: 120px;
-        font-size: 16px;
-    }
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 765px) and (max-width: 799.98px) {
-    .area-total-cadastro {
-        margin-left: 260px;
-    }
-    .area-cadastro-projeto{
-        width: 200px;
-    }
-    .titulo-projeto{
-        margin-left: 120px;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 800px) and (max-width: 991.98px) {
-    .area-total-cadastro {
-        margin-left: 290px;
-    }
-    .area-cadastro-projeto{
-        width: 200px;
-    }
-    .titulo-projeto{
-        margin-left: 120px;
-    }
-}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    .area-total-cadastro {
-        margin-left: 335px;
-    }.area-cadastro-projeto{
-        width: 250px;
-    }
-}
-@media (min-width: 1200px) {
-    .area-total-cadastro {
-        margin-left: 335px;
-    }.area-cadastro-projeto{
-        width: 250px;
-    }
-}

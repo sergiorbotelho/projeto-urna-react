@@ -22,7 +22,8 @@ function Cadastro() {
     const [candidatos, setCandidatos] = useState([]);
 
     const [eleitor, setEleitor] = useState('');
-    const [email, setEmail] = useState('')
+    const [email, setEmail] = useState('');
+    const [senhaEleitor, setSenhaEleitor] = useState('');
     const [eleitores, setEleitores] = useState([])
 
     const [nomeProjeto, setNomeProjeto] = useState([])
@@ -109,6 +110,7 @@ function Cadastro() {
         await addDoc(collection(docRef, "Eleitor"), {
             nome: eleitor,
             email: email,
+            senha: senhaEleitor,
             created: Date(),
 
         })
@@ -116,6 +118,7 @@ function Cadastro() {
                 toast.success("Cadastro realizado")
                 setEleitor('')
                 setEmail('')
+                setSenhaEleitor('')
 
             })
             .catch((error) => {
@@ -246,11 +249,11 @@ function Cadastro() {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
-                        {/* <Input
-                            placeholder='Partido'
-                            value={partido}
-                            onChange={(e) => setPartido(e.target.value)}
-                        /> */}
+                        <Input
+                            placeholder='Senha'
+                            value={senhaEleitor}
+                            onChange={(e) => setSenhaEleitor(e.target.value)}
+                        />
 
                         {Object.keys(editEleitor).length > 0 ? (
                             <Button onClick={handleUpdateEleitor}>Atualizar</Button>

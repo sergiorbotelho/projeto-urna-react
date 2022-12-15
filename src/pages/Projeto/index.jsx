@@ -16,7 +16,8 @@ function Projeto() {
     const [openModal, setOpenModal] = useState(false);
     const { projeto, setProjeto } = useContext(ContextApi);
     const [projetos, setProjetos] = useState([]);
-    const [user, setUser] = useState([])
+    const [user, setUser] = useState([]);
+    const [senhaProjeto, setSenhaProjeto] = useState('')
 
     const navigate = useNavigate();
 
@@ -55,7 +56,8 @@ function Projeto() {
 
         await setDoc(doc(db, "Projeto", projeto), {
             uid: user.uid,
-            created: Date()
+            created: Date(),
+            senha: senhaProjeto
         })
             .then(() => {
 
@@ -82,7 +84,7 @@ function Projeto() {
                 <div>
                     <div className='area-novoprojeto'>
                         <div className='btn-addprojeto' onClick={() => setOpenModal(true)}>+</div>
-                        <h1 className='h1'>Novo projeto</h1>
+                        <h1 className='h1-h1'>Novo projeto</h1>
                     </div>
                 </div>
                 <div className='titulo-criados'>Projetos Criados</div>
@@ -111,9 +113,8 @@ function Projeto() {
                     <input type="text"
                         style={{ marginTop: '5px' }}
                         placeholder='Senha'
-                        value={projeto}
-                        // onChange={(e) => setProjeto(e.target.value)}
-                        onChange={() => {}}
+                        value={senhaProjeto}
+                        onChange={(e) => setSenhaProjeto(e.target.value)}
                     />
                     <Button className="btn-salvar" onClick={handleSalvarProjeto}>Salvar</Button>
 

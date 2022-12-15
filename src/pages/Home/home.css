@@ -25,7 +25,9 @@
 .area-btn-home{
     width: 300px;
 }
-
+.imagem-home{
+    width: 500px;
+}
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     .content-home{
