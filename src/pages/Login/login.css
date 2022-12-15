@@ -6,7 +6,6 @@
     background-color: #A3B0D6;
     width: 100%;
     min-width: 80%;
-    
 }
 .container-input{
     display: flex;
@@ -24,6 +23,37 @@
 }
 
 .container-img > img{
-    width: 800px;
-    
+    width: 600px;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 699.98px) {
+    .container-img > img{
+        display: none;
+    }
+    .container-input{
+        width: 300px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 700px) and (max-width: 799.98px) {
+    .container-img > img{
+        width: 250px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 800px) and (max-width: 991.98px) {
+    .container-img > img{
+        width: 400px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .container-img > img{
+        width: 500px;
+    }
 }

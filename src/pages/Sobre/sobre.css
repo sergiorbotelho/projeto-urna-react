@@ -17,13 +17,15 @@
     color: #185c91;
 }
 .area-card{
-   display: flex;
-   justify-content: center;
-   align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+}
 
-   width: 100%;
-   flex-direction: column;
-
+.margin-card{
+    margin-left: 320px;
 }
 
 .grupo1{
@@ -32,11 +34,44 @@
 }
 
 
+/* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+    .margin-card{
+        margin-left: 160px;
+    }
     .area-card{
         flex-direction: row;
     }
     .grupo1{
         flex-direction: column;
+    }
+    .titulo{
+        display: none;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .margin-card{
+        margin-left: 220px;
+    }
+    .area-card{
+        flex-direction: row;
+    }
+    .grupo1{
+        flex-direction: column;
+    }
+    .titulo{
+        font-size: 26px;
+        text-align: center;
+        margin-right: -30px;
+        margin-left: 20px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .margin-card{
+        margin-left: 260px;
     }
 }

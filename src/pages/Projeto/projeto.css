@@ -1,3 +1,7 @@
+.h1{
+    color: #004c98;
+}
+
 .container-projeto{
     background-color: #A3B0D6;
     min-height: 100vh;
@@ -11,14 +15,15 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    margin-left: 320px;
 
 }
 .area-novoprojeto{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
-    margin-right: 270px;
+    margin-bottom: 40px;
+    margin-right: 20px;
 }
 
 .btn-addprojeto{
@@ -37,12 +42,10 @@
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 20px;
-    margin-right: 270px;
 }
 
 .area-projetoscriados{
     margin-top: 20px;
-    
     width: 100%;
 }
 
@@ -77,4 +80,54 @@
     display: flex;
     align-items: center;
     justify-content: start;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .container-area{
+        margin-left: 160px;
+    }
+    .titulo-criados{
+        font-size: 18px;
+    }
+    .area-urna{
+        height: 50px;
+        width: 50%;
+    }
+    .area-urna .urnas{
+        font-size: 14px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container-area{
+        margin-left: 220px;
+    }
+    .titulo-criados{
+        font-size: 20px;
+    }
+    .area-urna{
+        width: 40%;
+    }
+    .area-urna .urnas{
+        font-size: 15px;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .container-area{
+        margin-left: 260px;
+    }
+    .titulo-criados{
+        font-size: 24px;
+    }
+    .area-urna{
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+    .area-urna .urnas{
+        font-size: 18px;
+    }
 }
