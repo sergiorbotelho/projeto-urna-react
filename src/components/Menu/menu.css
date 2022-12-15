@@ -1,6 +1,6 @@
 .menu-lateral{
     width: 320px;
-    height: 100vh;
+    height: 100%;
     background-color: #5A72B8;
     display: flex;
     flex-direction: column;
@@ -12,7 +12,6 @@
 .imgLogo{
     width: 200px;
     margin: 50px 0;
-
 }
 
 .linkMenu{
@@ -22,7 +21,51 @@
     font-weight: bold;
     margin: 20px 0;
 }
+
+.linkMenu:hover{
+    color: #c6c6c6;
+}
+
 .logout{
     cursor: pointer;
     margin-top: 30px;
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    .menu-lateral{
+        width: 160px;
+    }
+    .imgLogo{
+        width: 80px;
+    }
+    .linkMenu{
+        font-size: 15px;
+        margin: 20px 0;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .menu-lateral{
+        width: 220px;
+    }
+    .imgLogo{
+        width: 130px;
+    }
+    .linkMenu{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .menu-lateral{
+        width: 260px;
+    }
+    .imgLogo{
+        width: 180px;
+    }
 }

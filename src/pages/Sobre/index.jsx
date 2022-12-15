@@ -12,7 +12,7 @@ function Sobre() {
     return (
         <div className='container-sobre'>
             <Menu />
-            <div className='area-card'>
+            <div className='area-card margin-card'>
                 <div className='titulo'>Grupo 02</div>
                 <div className='area-card'>
                     <div className='grupo1'>

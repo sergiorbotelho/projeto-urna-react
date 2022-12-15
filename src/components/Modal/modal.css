@@ -8,11 +8,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 .container-modal{
-    
-    background-color: #dddddd;
+    background-color: #A3B0D6;
     width: 40%;
     height: 35%;
     border: 1px solid #000;
@@ -35,7 +33,6 @@
     right: calc(-100% + 64px);
     top: 16px;
     z-index: 10;
-    
 }
 
 .btn-close::after,
@@ -45,7 +42,6 @@
     width: 2.5px;
     height: 24px;
     background-color: #000;
-
 }
 
 .btn-close::before{
@@ -61,8 +57,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
 }
 .content h1{
     	margin-bottom: 30px;
@@ -71,3 +65,20 @@
     margin-top: 20px;
 }
 
+
+/* Extra small devices (portrait phones, less than 767.98px) */
+@media (max-width: 767.98px) {
+    .content h1{
+        font-size: 1.4rem;
+    }
+    .container-modal{
+        width: 80%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .content h1{
+        font-size: 1.6rem;
+    }
+}

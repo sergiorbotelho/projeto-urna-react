@@ -45,6 +45,7 @@
     justify-content: center;
     font-size: 28px;
     font-weight: bold;
+    color: white;
 }
 .h1:hover{
     color: transparent;
@@ -90,13 +91,13 @@
         font-size: 19px;
     }
     .card{
-        margin: 6px;
-        width: 120px;
-        height: 120px;
+        margin: 1px;
+        width: 100px;
+        height: 100px;
     }
     .imgCard{
-        width: 120px;
-        height: 120px;
+        width: 100px;
+        height: 100px;
     }
 }
 

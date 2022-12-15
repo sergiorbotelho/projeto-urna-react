@@ -82,7 +82,7 @@ function Projeto() {
                 <div>
                     <div className='area-novoprojeto'>
                         <div className='btn-addprojeto' onClick={() => setOpenModal(true)}>+</div>
-                        <h1>Novo projeto</h1>
+                        <h1 className='h1'>Novo projeto</h1>
                     </div>
                 </div>
                 <div className='titulo-criados'>Projetos Criados</div>
@@ -107,6 +107,13 @@ function Projeto() {
                         placeholder='Nome do projeto'
                         value={projeto}
                         onChange={(e) => setProjeto(e.target.value)}
+                    />
+                    <input type="text"
+                        style={{ marginTop: '5px' }}
+                        placeholder='Senha'
+                        value={projeto}
+                        // onChange={(e) => setProjeto(e.target.value)}
+                        onChange={() => {}}
                     />
                     <Button className="btn-salvar" onClick={handleSalvarProjeto}>Salvar</Button>
 
